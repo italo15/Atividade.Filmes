@@ -9,10 +9,62 @@
 <body>
     <div class="conteudo">
 
-        <div class="campoTitulo">
+        <div class="campoPesquisa">
             <label for="Pesquisa"></label>
             <input type="text" id="Pesquisa" placeholder="Ex: La Chinoise..." >
             <button id="lupaBusca" ><img src="Assets\zoom-svgrepo-com.svg" id="imag" ></button>
+        </div>
+
+        <div id="cardFilmes">
+            <!--cada um dos campos tem que ser uma div com uma classe
+            eles tem que ter um input e um ID também
+            devem ser readonly e de tipo texto
+            para manipular as informações será com essa convenção:
+            const campoInformação = document.querySelector("#Informação");
+            a const recebe o nome da classe e o query selector o ID-->
+
+            <section class="grupoPosterTitulo">
+                <article class="grupoCampos">
+                    <img id="poster" alt="Poster" style="max-width: 200px; height: auto; display: none;">
+                </article>
+                
+                <article class="grupoCampos">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" readonly>
+                </article>
+            </section>
+
+            <section class="grupoDiretorAnoDuracao">
+                <article class="grupoCampos">
+                    <label for="diretor">Direção:</label>
+                    <input type="text" id="diretor" readonly>
+                </article>
+
+                <article class="grupoCampos">
+                    <label for="ano">Lançamento:</label>
+                    <input type="text" id="ano" readonly>
+                </article>
+
+                <article class="grupoCampos">
+                    <label for="duracao">Duração:</label>
+                    <input type="text" id="duracao" readonly>
+                </article>
+            </section>
+
+            <article class="grupoCampos">
+                <label for="atores">Atores:</label>
+                <input type="text" id="atores" readonly>
+            </article>
+
+            <article class="grupoCampos">
+                <label for="genero">Gênero:</label>
+                <input type="text" id="genero" readonly>
+            </article>
+
+            <article class="grupoCampos">
+                <label for="sinopse">Sinopse:</label>
+                <input type="text" id="sinopse" readonly>
+            </article>
         </div>
     </div>
 
