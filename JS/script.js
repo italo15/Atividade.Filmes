@@ -60,7 +60,7 @@ async function buscarFilme() {
 
         //acessamos os valores dos nossos campos e atribuimos os valores correspondentes
         //por meio das variáveis contidas no .json retornado pela nossa pesquisa
-        campoPoster.value = dadosFilme.Poster
+        campoPoster.src = dadosFilme.Poster
         campoTitulo.value = dadosFilme.Title
         campoDiretor.value = dadosFilme.Director
         campoAno.value = dadosFilme.Year
