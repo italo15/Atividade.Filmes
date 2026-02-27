@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca de Filmes</title>
     <link rel="stylesheet" href="styles.CSS\Filmes.Css">
 </head>
-<body>
-    <div class="conteudo">
 
-        <form class="campoTitulo">
-            <label for="Pesquisa"></label>
-            <input type="text" id="Pesquisa" placeholder="Ex: La Chinoise..." >
-            <button id="lupaBusca" ><img src="Assets\zoom-svgrepo-com.svg" id="imag" ></button>
-        </form>
-    </div>
+<body>
+    <!-- O <section> foi criado para o agrupamento dos "button" e "label". -->
+    <section class="barraPesquisaBotaoSaida" style="width: 600.233px; height: 75.05px;">
+        <!-- foi criado um campo de pesquisa para o usuario procurar o filme que deseja.-->
+        <div class="conteudo">
+            <form class="campoPesquisa">
+                <label for="Pesquisa"></label>
+                <input type="text" id="Pesquisas" placeholder="Ex: La Chinoise..."
+                    style="background-color: rgb(59, 59, 59);">
+                <button id="lupaBusca" style="background-color: rgb(59, 59, 59);">
+                    <img src="Assets\zoom-svgrepo-com.svg" id="imag">
+                </button>
+                <!-- foi criado um botao de sair de sua pagina, talvez mude para sair da pequisa, mas deus sabe-->
+                <button id="botaoSair" type="button" onclick="window.location.href='login.html';">
+                    <img src="Assets/emergency-exit-svgrepo-com.svg" id="imag">
+                </button>
+            </form>
+
+        </div>
+
+        <!-- O "Carroussel" foi criado para mostrar os filmes mais recentes, e ao clicar na imagem do filme, o usuario é redirecionado para a pagina do filme. -->
+        <div class="CarrousselFilmes">
+            <div class="CarrousselItens">
+                <button><img src="https://m.media-amazon.com/images/M/MV5BOWFkMmU0NWYtY2I3OC00ZGI0LWE4M2EtZGUzYzRkNGI2MzM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" onclick="window.location.href='https://www.adorocinema.com/filmes/filme-132150/'" alt="Slide 1"></button>
+                <button><img src="https://m.media-amazon.com/images/M/MV5BOWFkMmU0NWYtY2I3OC00ZGI0LWE4M2EtZGUzYzRkNGI2MzM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" onclick="window.location.href='https://www.adorocinema.com/filmes/filme-132151/'" alt="Slide 2"></button>
+                <button><img src="https://m.media-amazon.com/images/M/MV5BOWFkMmU0NWYtY2I3OC00ZGI0LWE4M2EtZGUzYzRkNGI2MzM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" onclick="window.location.href='https://www.adorocinema.com/filmes/filme-132152/'" alt="Slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+
 
     <script src="JS\script.js" defer></script>
 </body>
+
 </html>
+<!-- O "<figure>" É tipo uma divisoria para o que vai ser colocado nela, -->
+<!--O "<figcaption>" Serve principalmente para colocar uma descrição a uma imagem ou video. -->
+<!-- O "<card>" é criado para suportar a imagem dentro dela-->
+<!--
+    <card border="1px solid black" width="200px" height="300px">
+        <figure class="1°filmes">
+            <button id="seleçãoFilmes" onclick="window.location.href='https:https://www.adorocinema.com/filmes/filme-132150/'">
+                <img src="https://m.media-amazon.com/images/M/MV5BOWFkMmU0NWYtY2I3OC00ZGI0LWE4M2EtZGUzYzRkNGI2MzM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Descrição da imagem">
+            </button>
+            <figcaption>Lanterna verde</figcaption>
+        </figure>
+    </card> 
+-->

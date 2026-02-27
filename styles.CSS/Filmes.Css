@@ -6,19 +6,59 @@ body {
     padding-bottom: 900px;
 }
 
-#Pesquisa {
- width: 400px;
- height: 40px;
- 
+#Pesquisas {
+ align-items: center;
+ justify-self: center;
+ margin-top: 0px;
+ width: 420px;
+ height: 43.5px;
+ border-radius: 7px;
+
 }
 
 #lupaBusca {
+ margin-top: 10px;
  width: 50px; 
  height: 50px;
-
+border-radius: 10px;
 }
 
 #imag{
 width: 100%; 
 
+}
+
+#botaoSair {
+ text-decoration: none;
+ background-color: rgb(59, 59, 59);
+ border-radius: 10px;
+ display: inline-block;
+ width: 50px; 
+ height: 50px;
+}
+
+.CarrousselFilmes {
+    max-width: 350px; /* Ajuste o tamanho */
+    margin: auto;
+    overflow: hidden; /* Esconde as imagens fora da área */
+    border: 2px solid #ddd;
+    margin-top: 300px;
+    align-self: center;
+
+}
+
+.CarrousselItens {
+    display: flex; /* Coloca imagens lado a lado */
+    width: 300%; /* 100% * número de imagens */
+    animation: slideAnimation 10s infinite; /* 10s de duração total */
+    gap:50px;
+}
+
+.CarrousselItens img {
+    width: 100%; /* Cada imagem ocupa o espaço do contêiner */
+}
+
+@keyframes slideAnimation { /* Animação para deslizar as imagens */
+    0%  { transform: translateX(0%); } /* Começa na posição inicial */
+    100% { transform: translateX(-68%); } /* Move para a esquerda para mostrar a próxima imagem */
 }
