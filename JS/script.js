@@ -1,5 +1,5 @@
-const campoTitulo = document.querySelector("#titulo");
-const btnBusca = document.querySelector("#btnBusca")
+const campoTitulo = document.querySelector("#Pesquisa");
+const btnBusca = document.querySelector("#lupaBusca")
 
 async function buscarFilme () {
     const filme = campoTitulo.value;
