@@ -15,14 +15,7 @@
             <button id="lupaBusca" ><img src="Assets\zoom-svgrepo-com.svg" id="imag" ></button>
         </div>
 
-        <div id="cardFilmes">
-            <!--cada um dos campos tem que ser uma div com uma classe
-            eles tem que ter um input e um ID também
-            devem ser readonly e de tipo texto
-            para manipular as informações será com essa convenção:
-            const campoInformação = document.querySelector("#Informação");
-            a const recebe o nome da classe e o query selector o ID-->
-
+        <card id="cardFilmes">
             <section class="grupoPosterTitulo">
                 <article class="grupoCampos">
                     <img id="poster" alt="Poster" style="max-width: 200px; height: auto; display: none;">
@@ -65,7 +58,7 @@
                 <label for="sinopse">Sinopse:</label>
                 <input type="text" id="sinopse" readonly>
             </article>
-        </div>
+        </card>
     </div>
 
     <script src="JS\script.js" defer></script>
